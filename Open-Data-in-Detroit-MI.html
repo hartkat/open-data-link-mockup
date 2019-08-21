@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Open Data Portal and Web Apps | City of Detroit</title>
+    <style type="text/css">
+    	body{
+    		color: #18252a;
+    	}
+    	header{
+    		display: flex;
+    	}
+    	content{
+    		width: 1170px;
+    		margin-top: 50px; 
+    		padding: 15px;
+		    margin: 0 auto;
+		    display: block;
+    	}
+    	.page-header {
+		    border: none;
+		    text-transform: uppercase;
+		    margin: 50px 0 70px 0;
+		    padding: 0;
+		    border-bottom: 5px solid #feb70d;
+		}
+		p{
+		    font-size: 18px;
+		    line-height: 1.8em;
+		}
+		.field--name-description {
+		    width: 75%;
+		}
+		h1{
+			font-size: 48px;
+		}
+		h2{
+			font-size: 40px;
+    		margin-top: 50px;
+		}
+		figure img{
+			max-width: 100%;
+			margin: 0 auto;
+		}
+		figure{
+			width: 800px;
+		    border: 3px solid #3b3b3b;
+		    margin: 0 auto;
+		}
+		figcaption{	
+		    background: #f2f2f2;
+		    font-size: 16px;
+		    padding: 20px;
+		    font-weight: 900;
+		}
+		a.button{    
+			text-decoration: none;
+		    color: white;
+		    background: #004445;
+		    font-weight: 900;
+		    padding: 15px;
+		    font-size: 20px;
+		    text-transform: uppercase;
+		    position: relative;
+		    top: 16px;
+		    left: 182px;
+		}
+		a.button:hover{
+			background: #9fd5b3;
+			color: #004445;
+		}
+		.example-2, .example-3{
+			margin-top: 100px;
+		}
+		footer{
+		    background: #f2f2f2;
+		    margin-top: 150px;
+		    height: 100px;
+		    text-align: center;
+		}
+    </style>
+  </head>
+  <body>
+  	<header>
+  		<div style="margin: 0 auto; display: flex">
+			<div style="display: inline-block; width: 107px; float: left;">
+		        <a href="http://detroitmi.gov" title="Home" rel="home">
+		            <img src="https://detroitmi.gov/themes/custom/detroitmi/logo.png" alt="Home">
+		        </a>
+		    </div>
+		    <div style="display: inline-block; float: left;">
+		    	<div style="position: relative; top: 14px;">
+		    		<div style="display: inline-block; vertical-align: top;">
+		    			<ul>
+		    				<li style="list-style-type: none; display: inline-block; text-transform: uppercase; margin-right: 16px;"><a style="font-size: 15px; text-decoration: none; color: 18252a;" href="https://detroitmi.gov/departments/detroit-department-transportation/bus-schedules" target="_blank">Buses</a></li>
+		    				<li style="list-style-type: none; display: inline-block; text-transform: uppercase; margin-right: 16px;"><a style="font-size: 15px; text-decoration: none; color: 18252a;" href="https://detroitmi.gov/departments" target="_blank">Departments</a></li>
+		    				<li style="list-style-type: none; display: inline-block; text-transform: uppercase; margin-right: 16px;"><a style="font-size: 15px; text-decoration: none; color: 18252a;" href="https://detroitmi.gov/government" target="_blank">Government</a></li>
+		    				<li style="list-style-type: none; display: inline-block; text-transform: uppercase; margin-right: 16px;"><a style="font-size: 15px; text-decoration: none; color: 18252a;" href="https://detroitmi.gov/departments/human-resources-department/apply-job" target="_blank">Jobs</a></li>
+		    				<li style="list-style-type: none; display: inline-block; text-transform: uppercase; margin-right: 16px;"><a style="font-size: 15px; text-decoration: none; color: 18252a;" href="https://detroitmi.gov/how-do-i/pay-fine-bill-or-tax" target="_blank">Pay</a></li>
+		    				<li style="list-style-type: none; display: inline-block; text-transform: uppercase; margin-right: 16px;"><a style="font-size: 15px; text-decoration: none; color: 18252a;" href="https://detroitmi.gov/departments/water-and-sewerage-department" target="_blank">Water</a></li>
+		    			</ul>
+		    		</div>
+		    		<div style="display: inline-block; vertical-align: top;">
+		    			<ul>
+		    				<li style="list-style-type: none; display: inline-block; text-transform: uppercase; margin-right: 16px;"><a style="font-size: 12px; text-decoration: none; color: 18252a;" href="https://detroitmi.gov/" target="_blank">English</a></li>
+		    				<li style="list-style-type: none; display: inline-block; text-transform: uppercase; margin-right: 16px;"><a style="font-size: 12px; text-decoration: none; color: 18252a;" href="https://detroitmi.gov/es" target="_blank">Español</a></li>
+		    				<li style="list-style-type: none; display: inline-block; text-transform: uppercase; margin-right: 16px;"><a style="font-size: 12px; text-decoration: none; color: 18252a;" href="https://detroitmi.gov/bn" target="_blank">Bengali</a></li>
+		    				<li style="list-style-type: none; display: inline-block; text-transform: uppercase; margin-right: 16px;"><a style="font-size: 12px; text-decoration: none; color: 18252a;" href="https://detroitmi.gov/ar" target="_blank">العربية</a></li>
+		    			</ul>
+		    		</div>
+		    	</div>
+		    	<div style="position: relative; float: left;">
+		    		<form action="https://detroitmi.gov/search" method="get">
+		    			<input style="width: 972px; max-width: none; font-weight: 900; border: 2px solid #004445; height: 57px; font-size: 30px; font-family: 'Montserrat'; text-align: center;" type="text" name="search" value="" size="30" maxlength="128" autocomplete="off" placeholder="SEARCH">
+		    		</form>
+		    	</div>
+		    </div>
+		</div>
+
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css?family=Montserrat:300,900');
+			body{
+				font-family: 'Montserrat', sans-serif;
+			}
+		    #search-bar input:placeholder-shown{
+		    	font-weight: 900;
+		    	color: #004445;
+		    }
+		</style>
+  	</header>
+  	<content>
+  		<h1 class="page-header">Open Data Portal and Web Apps</h1>
+  		<p class="field--name-description">This page shows examples of how Detroit's Open Data Portal as well as web-based applications could be better integrated in the menus of Detroitmi.gov in order to be more accessible to users. There is also a plan to create a new internal page in Detroitmi.gov that would showcase and link to all available web apps.</p>
+  		<div class="examples">
+  			<div class="example-1">
+  				<h2>Additions to the Hamburger Menu</h2>
+  				<p>In the main menu of Detroitmi.gov, we'd add 2 additonal links. One external link that would lead to the ESRI Open Data Portal, and one that would link to a newly created internal Detroitmi.gov page which houses all web apps.</p>
+  				<figure><img src="https://detroitmi.gov/sites/detroitmi.localhost/files/2019-08/open-data-menu-2.gif"><figcaption>Open Data Portal external link in hamburger menu</figcaption></figure>
+  				<a class="button" href="https://detroitmi.gov/sites/detroitmi.localhost/files/2019-08/open-data-menu-2.gif" target="_blank">Open Image Full Screen</a>
+  				<figure style="margin-top: 100px;"><img src="https://detroitmi.gov/sites/detroitmi.localhost/files/2019-08/web-app-hamburger.gif"><figcaption>Web Apps page link in hamburger menu</figcaption></figure>
+  				<a class="button" href="https://detroitmi.gov/sites/detroitmi.localhost/files/2019-08/web-app-hamburger.gif" target="_blank">Open Image Full Screen</a>
+  			</div>
+  			<div class="example-2">
+  				<h2>Additions to the "Working for You" Menu</h2>
+  				<p>In addition to the 2 links added to the hamburger menu, we would also add a Technology section to the Working for You interactive menu on the front page. From this section, we would place the same links to the external Open Data Portal and the internal Web Apps page.</p>
+  				<figure><img src="https://detroitmi.gov/sites/detroitmi.localhost/files/2019-08/working-for-you.gif"><figcaption>Open Data Portal from Working for You menu</figcaption></figure>
+  				<a class="button" href="https://detroitmi.gov/sites/detroitmi.localhost/files/2019-08/working-for-you.gif" target="_blank">Open Image Full Screen</a>
+  				<figure style="margin-top: 100px;"><img src="https://detroitmi.gov/sites/detroitmi.localhost/files/2019-08/web-app-working-for-you.gif"><figcaption>Web Apps page link in Working for You menu</figcaption></figure>
+  				<a class="button" href="https://detroitmi.gov/sites/detroitmi.localhost/files/2019-08/web-app-working-for-you.gif" target="_blank">Open Image Full Screen</a>
+  			</div>
+  			<div class="example-3">
+  				<h2>New Web Apps Page </h2>
+  				<p>The newly created Web Apps page would house links and brief details about all the web apps available citywide, including Open Data apps, Web Team apps, and third party apps. This page would give users one landing spot to be able to see all the web apps available to our citizens, as well as provide brief detail about what the app does..</p>
+  				<figure><img src="https://detroitmi.gov/sites/detroitmi.localhost/files/2019-08/web-app-page.gif"><figcaption>Web App Page</figcaption></figure>
+  				<a class="button" href="https://detroitmi.gov/sites/detroitmi.localhost/files/2019-08/web-app-page.gif" target="_blank">Open Image Full Screen</a>
+  			</div>
+  		</div>
+  	</content>
+  	<footer>
+  		<img src="https://detroitmi.gov/themes/custom/detroitmi/logo.png" style="width: 50px; margin-top:-39px">
+  	</footer>
+  </body>
+</html>
