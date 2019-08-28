@@ -10,6 +10,13 @@
     	header{
     		display: flex;
     	}
+    	header li a{
+    		color: #18252a;
+    	}
+    	header li a:hover{
+    		color: white;
+    		background: #004445;
+    	}
     	content{
     		width: 1170px;
     		margin-top: 50px; 
@@ -59,10 +66,10 @@
 		    background: #004445;
 		    font-weight: 900;
 		    padding: 15px;
-		    font-size: 20px;
+		    font-size: 16px;
 		    text-transform: uppercase;
 		    position: relative;
-		    top: 16px;
+		    top: 20px;
 		    left: 182px;
 		}
 		a.button:hover{
@@ -134,7 +141,10 @@
   		<div class="examples">
   			<div class="example-1">
   				<h2>Additions to the Hamburger Menu</h2>
-  				<p>In the main menu of Detroitmi.gov, we'd add 2 additonal links. One external link that would lead to the ESRI Open Data Portal, and one that would link to a newly created internal Detroitmi.gov page which houses all web apps.</p>
+  				<p>In the main menu of Detroitmi.gov, we could add 1 or 2 additional links. One external link that could lead to the ESRI Open Data Portal, and one that could link to a newly created internal Detroitmi.gov page which houses all web apps. One or both are possible. </p>
+				<p>Many other cities do not link to their open data portal on the front page of their website, however, web applications that help people complete common tasks are usually linked to on the front page. </p>
+				<p>Right now the menu structure is based on what is most accessed or searched for, however this approach means that tools that could save residents a lot of time, might not be discovered if they don’t know to look for them. If we think that these resources are potentially valuable to residents, and could help unburden the FOIA team this will be one of the more effective spots to elevate this information.</p>
+				<p><b>Effort required:</b> This will require minimal engineering effort to implement. We will just need a formal request from Alexis/Graham to the web team for this content change. This section is traditionally powered by analytics, and they would love buyin for pivoting from that approach somewhat.</p>
   				<figure><img src="https://detroitmi.gov/sites/detroitmi.localhost/files/2019-08/open-data-menu-2.gif"><figcaption>Open Data Portal external link in hamburger menu</figcaption></figure>
   				<a class="button" href="https://detroitmi.gov/sites/detroitmi.localhost/files/2019-08/open-data-menu-2.gif" target="_blank">Open Image Full Screen</a>
   				<figure style="margin-top: 100px;"><img src="https://detroitmi.gov/sites/detroitmi.localhost/files/2019-08/web-app-hamburger.gif"><figcaption>Web Apps page link in hamburger menu</figcaption></figure>
@@ -142,7 +152,8 @@
   			</div>
   			<div class="example-2">
   				<h2>Additions to the "Working for You" Menu</h2>
-  				<p>In addition to the 2 links added to the hamburger menu, we would also add a Technology section to the Working for You interactive menu on the front page. From this section, we would place the same links to the external Open Data Portal and the internal Web Apps page.</p>
+  				<p>In addition to the 2 links added to the hamburger menu, we could also add a Technology section to the Working for You interactive menu on the front page. If the Hamburger menu is not the preferred spot, this could also be an alternate option. From this section, we would place the same links to the external Open Data Portal and the internal Web Apps page.</p>
+				<p><b>Effort required:</b> This will require minimal engineering effort to implement. We will not need a formal request from Alexis/Graham to the web team for this content change as I understand it. We would need a formal request from Beth to the web team.</p>
   				<figure><img src="https://detroitmi.gov/sites/detroitmi.localhost/files/2019-08/working-for-you.gif"><figcaption>Open Data Portal from Working for You menu</figcaption></figure>
   				<a class="button" href="https://detroitmi.gov/sites/detroitmi.localhost/files/2019-08/working-for-you.gif" target="_blank">Open Image Full Screen</a>
   				<figure style="margin-top: 100px;"><img src="https://detroitmi.gov/sites/detroitmi.localhost/files/2019-08/web-app-working-for-you.gif"><figcaption>Web Apps page link in Working for You menu</figcaption></figure>
@@ -150,9 +161,17 @@
   			</div>
   			<div class="example-3">
   				<h2>New Web Apps Page </h2>
-  				<p>The newly created Web Apps page would house links and brief details about all the web apps available citywide, including Open Data apps, Web Team apps, and third party apps. This page would give users one landing spot to be able to see all the web apps available to our citizens, as well as provide brief detail about what the app does..</p>
+  				<p> If we do decide to create and link to a new Web Apps page on the front page of Detroitmi.gov, this would allow for us to create a portal for all web applications built by city teams. Right now some of these applications only live on the open data portal. Additionally our Web Apps tag on detroitmi.gov does not pull together all web applications used across the city. It takes several clicks to find information on the Parking App for example. Let’s make a one stop searchable shop for all our residents looking for digital resources!</p>
+				<p>Effort required: This will require minimal engineering effort to implement, but will take some time to gather all the content and find thumbnail photos for each web app. To help with that, Juan Carlos from the IET team would be able to implement without requiring additional time from the web team if helpful. We will just need a formal request from Alexis/Graham to the web team for this content change. This section is traditionally powered by analytics, and they would love buy-in for pivoting from that approach somewhat.</p>
   				<figure><img src="https://detroitmi.gov/sites/detroitmi.localhost/files/2019-08/web-app-page.gif"><figcaption>Web App Page</figcaption></figure>
   				<a class="button" href="https://detroitmi.gov/sites/detroitmi.localhost/files/2019-08/web-app-page.gif" target="_blank">Open Image Full Screen</a>
+  			</div>
+  			<div class="example-4">
+  				<h2>New Department Menu Item</h2>
+  				<p>We could also begin to further incorporate Web Apps into the menus on Department pages. Because of issues with the current Drupal templates for web apps and hosting (IET apps currently hosted on Github), not all Web Apps in the city appear automatically when tagged.</p>
+				<p><b>Effort Required:</b> While the design change might feel fairly simple this would require significantly more dev time to implement. The overall drupal templates would have to shift and the template structure for web apps would need to be investigated and updated as well. Additionally, we may need to look into some infrastructure improvements so that apps that are not currently hosted on the same server as Detroitmi.gov could still potentially be referenced. While this seems like a longer term goal, it will likely take significant time and effort.</p>
+  				<figure><img src="https://detroitmi.gov/sites/detroitmi.localhost/files/2019-08/web-apps-in-menu.gif"><figcaption>Web App Page</figcaption></figure>
+  				<a class="button" href="https://detroitmi.gov/sites/detroitmi.localhost/files/2019-08/web-apps-in-menu.gif" target="_blank">Open Image Full Screen</a>
   			</div>
   		</div>
   	</content>
